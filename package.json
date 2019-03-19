@@ -1,0 +1,11 @@
+{
+  "name": "ui-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "James Blashill <james@faire.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^0.18.0"
+  }
+}
