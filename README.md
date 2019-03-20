@@ -14,7 +14,7 @@ How you choose to accomplish this goals is up to you - your creativity is welcom
 
 ### API endpoints
 
-There are three API endpoints that will be of use. The shape of the request and response bodies can be found in `messages.proto`.
+There are three API endpoints that will be of use. The shapes of the request and response bodies are specified by protocol buffer (protobuf) messages found in `messages.proto`. More information on protocol buffers can be found here: https://developers.google.com/protocol-buffers/
 
 ** All request / response bodies are of type `application/json` and attributes are snake case - not camel case as the protobuf definitions suggest. **
 
