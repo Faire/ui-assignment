@@ -2,13 +2,15 @@
 
 ### Context
 
-Faire is a marketplace that connects wholesale makers (wholesalers) with retail stores. There is a wide variety of makers and products available on the Faire platform and so creating user interfaces that allow retailers to find relevant products effectively is vital to our success.
+Faire is a marketplace that connects wholesale makers with retail stores. There is a wide variety of makers and products available on the Faire platform and so creating user interfaces that allow retailers to find relevant products effectively is vital to our success.
 
 ### Assignment Description
 
 The goal of this assignment is to consume Faire's public APIs in order to build a compelling user interface to allow a retailer to effortlessly discover all of Faire's makers and products.
 
 For inspiration, please familiarize yourself with Faire's own web UI: https://www.faire.com/category/All
+
+How you choose to accomplish this goals is up to you - your creativity is welcome!
 
 ### API endpoints
 
@@ -35,6 +37,8 @@ _Takes:_ `SearchMakersWithFiltersRequest`
 _Returns:_ `SearchMakersWithFiltersResponse`
 
 #### Get maker products
+
+This endpoint will respond with all products for a particular maker (AKA brand) that is identified by a brand token. A brand token will be provided by the maker search response and looks like this: `b_19d9fe9fd`
 
 `GET /api/brand/{brand_token}/products`
 
