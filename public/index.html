@@ -1,5 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 <h2 id="status">Loading</h2>
+<h2 id="status2"></h2>
 <script>
   axios
     .get("http://localhost:4242/api/category/new")
@@ -9,4 +10,9 @@
           res.data.length
         } categories`)
     );
+  axios
+    .post("http://localhost:4242/api/search/makers-with-filters", {
+      category: "Accessories"
+    })
+    .then(res => console.log(res.data));
 </script>
