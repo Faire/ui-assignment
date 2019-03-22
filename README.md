@@ -43,3 +43,7 @@ This endpoint will respond with all products for a particular maker (AKA brand) 
 `GET /api/brand/{brand_token}/products`
 
 _Returns:_ An array of `Product` objects
+
+#### CORS isssues
+
+If you run into CORS issues accessing the API, you can use the included `server.js` file to run a basic web server that is capable of proxying requests to https://www.faire.com. Run `npm install` followed by `node server.js` to run this server. The example can then be accessed in your browser via http://localhost:4242
