@@ -1,0 +1,12 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<h2 id="status">Loading</h2>
+<script>
+  axios
+    .get("http://localhost:4242/api/category/new")
+    .then(
+      res =>
+        (document.getElementById("status").innerHTML = `Found ${
+          res.data.length
+        } categories`)
+    );
+</script>
